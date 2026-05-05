@@ -3,52 +3,49 @@
 <head>
     <link rel="icon" type="image/png" href="Purple_logo.jpg">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to PurpleNode</title>
-    <style>
-        /* إعدادات الصفحة والخلفية المريحة */
-        body {
-            /* لون خلفية أبيض فاتح وهادئ جداً مريح للعين */
-            background-color: #f8f9fa;
-            margin: 0;
-            height: 100vh; /* جعل الصفحة تملأ ارتفاع الشاشة بالكامل */
-            display: flex;         /* استخدام تقنية Flexbox للمحاذاة */
-            justify-content: center; /* توسيط العناصر أفقياً */
-            align-items: center;     /* توسيط العناصر عمودياً */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط حديث ونظيف */
-        }
-
-        /* تصميم المستطيل الأرجواني ذو الحواف الناعمة */
-        .purple-card {
-            /* تدرج لوني أرجواني حديث بدلاً من لون مصمت */
-            background: linear-gradient(135deg, #9c27b0, #673ab7);
-            color: white; /* لون النص أبيض للتباين */
-            padding: 60px 100px; /* مساحة داخلية واسعة حول النص */
-            border-radius: 35px; /* حواف دائرية ناعمة جداً (Soft Edges) */
-            /* ظل خفيف وناعم لإعطاء عمق وتأثير الطفو */
-            box-shadow: 0 20px 40px rgba(103, 58, 183, 0.25);
-            text-align: center;
-            transition: transform 0.3s ease; /* تأثير حركي بسيط عند مرور الماوس */
-        }
-
-        /* تأثير بسيط عند وضع الماوس فوق المستطيل */
-        .purple-card:hover {
-            transform: translateY(-5px); /* يرتفع قليلاً للأعلى */
-        }
-
-        /* تنسيق النص */
-        h1 {
-            margin: 0;
-            font-size: 3.5rem; /* حجم خط كبير وواضح */
-            font-weight: 700;
-        }
-    </style>
+    <title>Vocal</title>
 </head>
 <body>
-
-    <div class="purple-card">
-        <h1>Hello Purple World!</h1>
-    </div>
-
+    <nav>
+        <a href="#main">Skip to main content</a>
+    <ul>
+        <li><a href="#S1">Hatsune Miku</a></li>
+        <li><a href="#S2">Kasane Teto</a></li>
+        <li><a href="#S3">Zundamon</a></li>
+    </ul>
+    </nav>
+    <main id="main">
+    <h1>Vocal Synth Characters</h1>
+    <section id="S1">
+        <h2>Hatsune Miku (初音ミク)</h2>
+        <img alt="Hatsune Miku"src="https://static.wikia.nocookie.net/vocalsynth/images/b/bc/Img_hatsune_miku_v6.png/revision/latest?cb=20260422154053" width="200px">
+        <ul>
+            <li>Software: Vocaloid</li>
+            <li>Signature Item: Spring onion</li>
+            <li>Release Date: August 31, 2007</li>
+        </ul>
+    </section>
+    <section id="S2">
+        <h2>Kasane Teto (重音テト)</h2>
+        <img alt="Kasane Teto"src="https://static.wikia.nocookie.net/vocalsynth/images/c/c8/Kasane_Teto_Synth_V_illust.png/revision/latest?cb=20230403044145" width="200px">
+        <ul>
+            <li>Software: UTAU</li>
+            <li>Signature Item: French Bread</li>
+            <li>Release Date: April 1, 2008</li>
+        </ul>
+    </section>
+    <section id="S3">
+        <h2>Zundamon (ずんだもん)</h2>
+        <img alt="Zundamon"src="https://static.wikia.nocookie.net/vocalsynth/images/4/4e/Zundamon_illust.png/revision/latest?cb=20211127015916" width="200px">
+        <ul>
+            <li>Software: VOICEVOX</li>
+            <li>Signature Item: Zunda Mochi</li>
+            <li>Release Date: May 21, 2017</li>
+        </ul>
+    </section>
+   </main>
+   <footer>
+    <p>Source <a href="https://vocalsynth.fandom.com/wiki/Category:Characters" target="_blank">Vocal Synth Characters Wiki</a>.</p>
+   </footer>
 </body>
 </html>
