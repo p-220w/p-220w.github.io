@@ -7,10 +7,6 @@ header{
   background-color: rgb(190, 163, 123);
 }
 
-nav{
-  background-color: rgb(223, 195, 158);
-}
-
 main{
   background-color: blanchedalmond;
   font-size: 120%;
@@ -33,4 +29,55 @@ h1{
 
 p{
   line-height: 1.6;
+}
+
+nav#intro {
+  display: inline-block;
+  width: 85%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+
+  padding: 20px 50px;
+}
+
+nav#intro img {
+  width: 10%;
+  height: auto;
+}
+
+nav#intro a {
+  margin-right: 15px;
+}
+
+#outro1{
+  background-color: rgb(223, 195, 158);
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 50px;
+}
+
+#outro1 img{
+  width: 100%;
+  height: auto;
+}
+
+#outro2{
+  background-color: rgb(223, 195, 158);
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 50px;
+}
+
+#outro2 img{
+  width: 18%;
+  height: auto;
 }
