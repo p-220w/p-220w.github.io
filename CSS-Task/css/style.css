@@ -81,3 +81,11 @@ nav#intro a {
   width: 18%;
   height: auto;
 }
+
+nav#intro a {
+  color: rgb(0, 0, 0) !important; 
+}
+
+nav#intro a:visited, nav#intro a:hover {
+  color: rgb(0, 0, 0) !important; 
+}
