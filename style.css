@@ -22,7 +22,8 @@ section#s1M{
 }
 
 section#s2T{
-    background-color: red;
+    background-image: url(images/Teto_Wall.webp);
+    background-size: cover;
 }
 
 section#s3Z{
@@ -33,32 +34,32 @@ section#outro{
     background-color: purple;
 }
 
-div#div_intro{
+.Vocal-Card{
     height: 94%;
     width: 35%;
+    border-radius: 10px;
+}
+div#div_intro{
     background-color: gray;
+    width: 65%;
 }
 
 div#d1M{
-    height: 94%;
-    width: 55%;
     background-color: gray;
 }
 
 div#d2T{
-    height: 94%;
-    width: 55%;
     background-color: gray;
+    border: 5px;
+    border-style: groove;
+    border-color: red;
 }
 
 div#d3Z{
-    height: 94%;
-    width: 55%;
     background-color: gray;
 }
 
 div#div_outro{
-    height: 94%;
-    width: 55%;
     background-color: gray;
+    width: 65%;
 }
