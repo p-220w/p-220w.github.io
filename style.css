@@ -66,6 +66,7 @@ div#d2T {
 
     backdrop-filter: none; 
     overflow: hidden;
+    opacity: 0.9;
 }
 div#d3Z{
     background-color: gray;
@@ -86,7 +87,7 @@ div#div_outro{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 99%;
+    width: 99.25%;
     height: 75px;
     border: 5px solid #ff4b72; 
     border-radius: 10px;
@@ -106,26 +107,77 @@ div#div_outro{
     border: 5px solid #ff4b72; 
     border-radius: 10px;
     border-top: none;
-    border-top-left-radius: 0; /* لإلغاء الانحناء من الأعلى إذا أزلنا الخط */
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
 .left-column{
     padding: 15px 25px;
+    width: 65%;
+    height: 85%;
     box-sizing: border-box;
-}
-.left-column span{
-    font-style: italic;
-    font-size: x-large;
-    font-weight: bold;
-    
+    overflow-y: auto;
 }
 
-.left-column p{
+.left-column::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.left-column::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); 
+    border-radius: 10px;
+}
+.left-column::-webkit-scrollbar-thumb {
+    background: rgba(255, 75, 114, 0.8);
+    border-radius: 10px;
+}
+
+.left-column::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 75, 114, 1); 
+}
+
+.T-H{
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+.T-subheading {
+    color: #9a0000;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-left: 4px solid #ffffff; 
+
+}
+
+
+.T-desc {
     font-style: italic;
     font-size: large;
+    margin-bottom: 18px; 
+    line-height: 1.6; 
+    color: #2b0000; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.left-column ul{
+#T-bread-list {
     font-style: italic;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 30px; 
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 10px;
 }
+
+#T-bread-list li::before {
+    content: '🥖 ';
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
