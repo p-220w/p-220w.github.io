@@ -93,6 +93,35 @@ div#div_outro{
     border-radius: 10px;
 }
 
+.chibi {
+    width: 10%;
+    height: 85%;
+    object-fit: contain; 
+    position: absolute;
+    left: 45px;
+    top: 4.5px;
+}
+
+.item {
+    width: 10%;
+    height: 55%;
+    object-fit: contain; 
+    position: absolute;
+    left: 850px;
+    top: 18px;
+}
+
+#S-of-T {
+    width: 8%;
+    height: 55%;
+    background-color: aliceblue;
+    border: #2b0000 2px solid;
+    position: absolute;
+    left: 1000px;
+    top: 18px;
+}
+
+
 .right-column iframe{
     width: 97%;
     height: 88.5%;
