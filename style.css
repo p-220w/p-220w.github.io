@@ -375,7 +375,7 @@ div#div_outro{
 }
 
 #M-negi-list li::before {
-    content: '🌿 ';
+    content: '✦ ';
     color: #ffffff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
@@ -437,7 +437,7 @@ div#div_outro{
 }
 
 #T-bread-list li::before {
-    content: '🥖 ';
+    content: '✦ ';
     color: #ffffff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
@@ -552,7 +552,7 @@ div#div_outro{
 }
 
 #Z-edamame-list li::before {
-    content: '🌱 ';
+    content: '✦ ';
     color: #ffffff;
-    text-shadow: 0 0 5px rgba(139, 212, 80, 0.8);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
