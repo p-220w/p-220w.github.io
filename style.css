@@ -215,6 +215,12 @@ div#div_outro{
     
 }
 
+/* 🛡️ بروتوكول تصغير قذيفة الإدامامي لزوندامون */
+#B-Z .item {
+    height: 28%; /* قمنا بتصغير الارتفاع من 55% إلى 35% لتبدو لطيفة ومتناسبة */
+    top: 57px;   /* تعديل مكان الارتفاع العلوي (Top) لكي تسير القذيفة بمحاذاة يدها تماماً ولا تطير في الهواء */
+}
+
 @keyframes itemMove {
     0% {
         left:70%;
@@ -312,6 +318,7 @@ div#div_outro{
 
 .center-column img#Z-img {
     border-color:#a0e862; 
+    opacity: 2;
 }
 
 .left-column{
@@ -370,7 +377,7 @@ div#div_outro{
 #M-negi-list li::before {
     content: '🌿 ';
     color: #ffffff;
-    text-shadow: 0 0 5px rgba(57, 197, 187, 0.8);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
 .left-column::-webkit-scrollbar {
@@ -435,3 +442,117 @@ div#div_outro{
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
+#L-Z::-webkit-scrollbar-thumb {
+    background: rgba(139, 212, 80, 0.8);
+    border-radius: 10px;
+}
+
+#L-Z::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 212, 80, 1); 
+}
+
+#B-Z {
+    border-color: #a0e862; 
+}
+
+#feed-trigger-Z:checked ~ .item {  
+    animation-name: itemMove;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+}
+
+#feed-trigger-Z:checked ~ .S-of-Z #click-Z {
+    background-color: #cbf5a2;
+}
+
+.S-of-Z {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    left: 75%;
+    top: 45px;
+}
+
+#click-Z {
+    width: 20%;
+    height: 65%;
+    text-align: center;
+    background-color: #8bd450;
+    border: 6px;
+    border-style: groove;
+    border-color: #4c8a1d;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: background-color .2s linear, transform .2s linear;
+}
+
+#click-Z:hover {
+    background-color: #a0e862;
+}
+
+#click-Z:active {
+    background-color: #cbf5a2;
+    transform: translateY(5px);
+}
+#text-Z {
+    width: 65%;
+    height: 65%;
+    color: #1e4d00;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: #a8ee6b;
+    border: 5px ;
+    border-color: #3b7511;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    left: 75px;
+}
+
+.Z-H {
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #3b7511;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+.Z-subheading {
+    color: #245203;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-left: 4px solid #ffffff; 
+}
+
+.Z-desc {
+    font-style: italic;
+    font-size: large;
+    margin-bottom: 18px; 
+    line-height: 1.6; 
+    color: #132b00;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+#Z-edamame-list {
+    font-style: italic;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 30px; 
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 10px;
+}
+
+#Z-edamame-list li::before {
+    content: '🌱 ';
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(139, 212, 80, 0.8);
+}
