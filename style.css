@@ -18,7 +18,8 @@ section#intro{
 }
 
 section#s1M{
-    background-color: aqua;
+    background-image: url(images/Miku_Wall.png);
+    background-size: cover;
 }
 
 section#s2T{
@@ -27,7 +28,8 @@ section#s2T{
 }
 
 section#s3Z{
-    background-color: rgb(106, 255, 47);
+    background-image: url(images/Zundamon_Wall.png);
+    background-size: cover;
 }
 
 section#outro{
@@ -46,8 +48,23 @@ div#div_intro{
     width: 85%;
 }
 
-div#d1M{
-    background-color: gray;
+div#d1M {
+    background-color: #39c5bb;
+    background-image: 
+        radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.45) 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, rgba(0, 130, 120, 0.3) 0%, transparent 60%);
+
+    border: 3px solid #5ce5dc;
+
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(57, 197, 187, 0.5), 
+        inset 0 6px 15px rgba(255, 255, 255, 0.5),
+        inset 0 -6px 15px rgba(0, 80, 75, 0.4);
+
+    backdrop-filter: none; 
+    overflow: hidden;
+    opacity: 0.9;
 }
 
 div#d2T {
@@ -68,8 +85,23 @@ div#d2T {
     overflow: hidden;
     opacity: 0.9;
 }
-div#d3Z{
-    background-color: gray;
+div#d3Z {
+    background-color: #8bd450;
+    background-image: 
+        radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.5) 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, rgba(40, 100, 20, 0.25) 0%, transparent 60%);
+
+    border: 3px solid #a0e862;
+
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(139, 212, 80, 0.5),
+        inset 0 6px 15px rgba(255, 255, 255, 0.5),
+        inset 0 -6px 15px rgba(30, 80, 15, 0.4);
+
+    backdrop-filter: none; 
+    overflow: hidden;
+    opacity: 0.9;
 }
 
 div#div_outro{
@@ -89,10 +121,19 @@ div#div_outro{
     left: 0;
     width: 99.25%;
     height: 140px;
-    border: 5px solid #ff4b72; 
+    border: 5px solid; 
     border-radius: 10px;
 }
 
+#B-M{
+    border-color:#5ce5dc; 
+}
+#B-T{
+    border-color:#ff4b72; 
+}
+#B-Z{
+    border-color:#a0e862; 
+}
 .chibi {
     width: 10%;
     height: 100%;
@@ -103,24 +144,83 @@ div#div_outro{
 }
 
 .item {
-    width: 10%;
+    width: 5%;
     height: 55%;
     object-fit: contain; 
     position: absolute;
     left: 70%;
-    top: 40px;
+    top: 37px;
+    
 }
 
-#S-of-T {
-    width: 8%;
-    height: 55%;
-    background-color: aliceblue;
-    border: #2b0000 2px solid;
+@keyframes itemMove {
+    0% {
+        left:70%;
+    }
+    100% {
+        left: 9%;
+    }
+}
+
+#feed-trigger:checked ~ .item {  
+    animation-name: itemMove;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+}
+
+#feed-trigger:checked ~ .S-of-T #click-T {
+    background-color: #ffacbe;
+}
+.S-of-T {
+    width: 15%;
+    height: 40%;
     position: absolute;
-    left: 82.5%;
-    top: 40px;
+    left: 75%;
+    top: 45px;
 }
 
+#click-T {
+    width: 20%;
+    height: 65%;
+    text-align: center;
+    background-color: #ff4b72;
+    border: 6px;
+    border-style: groove;
+    border-color: #da2f40;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: background-color .2s linear, transform .2s linear;
+}
+
+#click-T:hover {
+    background-color: #ff6d8c;
+}
+
+#click-T:active {
+    background-color: #ffacbe;
+    transform: translateY(5px);
+}
+
+
+#text-T {
+    width: 65%;
+    height: 65%;
+    color: #77001a;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: #e25b78;
+    border: 5px ;
+    border-color:#b30c0c;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    left: 75px;
+}
 
 .right-column iframe{
     width: 97%;
@@ -133,11 +233,23 @@ div#div_outro{
     width: 100%;
     height: 101%;
     object-fit: contain; 
-    border: 5px solid #ff4b72; 
+    border-style: solid;
+    border-width: 5px;
     border-radius: 10px;
     border-top: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.center-column img#M-img {
+    border-color:#5ce5dc; 
+}
+.center-column img#T-img {
+    border-color:#ff4b72; 
+}
+
+.center-column img#Z-img {
+    border-color:#a0e862; 
 }
 
 .left-column{
@@ -145,6 +257,58 @@ div#div_outro{
     width: 65%;
     box-sizing: border-box;
     overflow-y: auto;
+}
+
+#L-M::-webkit-scrollbar-thumb {
+    background: rgba(57, 197, 187, 0.8);
+    border-radius: 10px;
+}
+
+#L-M::-webkit-scrollbar-thumb:hover {
+    background: rgba(57, 197, 187, 1); 
+}
+
+.M-H {
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #008b8b;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+.M-subheading {
+    color: #005f5f;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-left: 4px solid #ffffff; 
+}
+
+.M-desc {
+    font-style: italic;
+    font-size: large;
+    margin-bottom: 18px; 
+    line-height: 1.6; 
+    color: #002b36;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+#M-negi-list {
+    font-style: italic;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 30px; 
+    line-height: 1.6;
+    list-style: none;
+    padding-left: 10px;
+}
+
+#M-negi-list li::before {
+    content: '🌿 ';
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(57, 197, 187, 0.8);
 }
 
 .left-column::-webkit-scrollbar {
