@@ -134,6 +134,68 @@ div#div_outro{
 #B-Z{
     border-color:#a0e862; 
 }
+
+#feed-trigger-M:checked ~ .item {  
+    animation-name: itemMove;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+}
+
+#feed-trigger-M:checked ~ .S-of-M #click-M {
+    background-color: #a6f0ea;
+}
+
+.S-of-M {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    left: 75%;
+    top: 45px;
+}
+
+
+#click-M {
+    width: 20%;
+    height: 65%;
+    text-align: center;
+    background-color: #39c5bb;
+    border: 6px;
+    border-style: groove;
+    border-color: #008b8b;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: background-color .2s linear, transform .2s linear;
+}
+
+#click-M:hover {
+    background-color: #5ce5dc;
+}
+
+#click-M:active {
+    background-color: #a6f0ea;
+    transform: translateY(5px);
+}
+
+#text-M {
+    width: 65%;
+    height: 65%;
+    color: #004d4d;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: #4dd2c8;
+    border: 5px ;
+    border-color: #006666;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    left: 75px;
+}
+
 .chibi {
     width: 10%;
     height: 100%;
