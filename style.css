@@ -14,7 +14,8 @@ section{
 }
 
 section#intro{
-    background-color: purple;
+    background-image: url(images/Purple_wall.png);
+    background-size: cover;
 }
 
 #Tanthim {
@@ -52,15 +53,26 @@ section#intro{
     width: 60%;
     height: 98%;
     left: 20%;
-    top: 2px;
+    top: -10px;
     border: 4px solid #d000d3;
     border-radius: 10px;
     font-size: 100px;
-    background-color: rgba(183, 0, 177, 0.08);
+    font-style: oblique;
+    color: #fc5fff;
+    background-color: rgba(183, 0, 177, 0.167);
+    
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all .2s linear;
+}
+
+#B-home:hover {
+    background-color: rgba(183, 0, 177, 0.407);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    transform: translateY(-5px);
 }
 
 .B-H-X {
@@ -73,14 +85,33 @@ section#intro{
 #B-H-M{
     border-color:#5ce5dc; 
     background-color: rgba(0, 139, 139, 0.08);
+    transition: all .2s linear;
 }
+#B-H-M:hover{
+    background-color: rgba(0, 255, 255, 0.204);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    transform: translateY(-5px);
+}
+
 #B-H-T{
     border-color:#ff4b72; 
     background-color: rgba(255, 77, 109, 0.08);
+    transition: all .2s linear;
+}
+#B-H-T:hover{
+    background-color: rgba(255, 0, 47, 0.208);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    transform: translateY(-5px);
 }
 #B-H-Z{
     border-color:#88dd3e; 
     background-color: rgba(112, 224, 0, 0.08);
+    transition: all .2s linear;
+}
+#B-H-Z:hover{
+    background-color: rgba(128, 255, 0, 0.36);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    transform: translateY(-5px);
 }
 
 .B-H-X img {
@@ -99,19 +130,24 @@ section#intro{
     width: 45%;
     height: 45%;
     font-size: x-large;
+    font-style: oblique;
 }
 
 .B-H-X span#sp-M {
     left: 28.5%;
+    color:#5ce5dc; 
 }
 
 .B-H-X span#sp-T {
     left: 32.5%;
+    color:#ff4b72; 
 }
 
 .B-H-X span#sp-Z {
-    left: 34%;
+    left: 34.5%;
+    color:#88dd3e; 
 }
+
 
 
 
@@ -330,10 +366,9 @@ div#div_outro{
     
 }
 
-/* 🛡️ بروتوكول تصغير قذيفة الإدامامي لزوندامون */
 #B-Z .item {
-    height: 28%; /* قمنا بتصغير الارتفاع من 55% إلى 35% لتبدو لطيفة ومتناسبة */
-    top: 57px;   /* تعديل مكان الارتفاع العلوي (Top) لكي تسير القذيفة بمحاذاة يدها تماماً ولا تطير في الهواء */
+    height: 28%;
+    top: 57px;
 }
 
 @keyframes itemMove {
