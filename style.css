@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -46,6 +50,8 @@ section#intro{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7.5%;
 }
 
 #B-home {
@@ -149,10 +155,6 @@ section#intro{
 }
 
 
-
-
-
-
 section#s1M{
     background-image: url(images/Miku_Wall.png);
     background-size: cover;
@@ -166,10 +168,6 @@ section#s2T{
 section#s3Z{
     background-image: url(images/Zundamon_Wall.png);
     background-size: cover;
-}
-
-section#outro{
-    background-color: purple;
 }
 
 .Vocal-Card{
