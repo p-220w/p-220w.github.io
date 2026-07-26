@@ -1,66 +1,54 @@
-<!doctype html>
-<html>
-    <head>
-        <title>PurpleNode</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="Purple_logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to PurpleNode</title>
+    <style>
+        /* إعدادات الصفحة والخلفية المريحة */
+        body {
+            /* لون خلفية أبيض فاتح وهادئ جداً مريح للعين */
+            background-color: #f8f9fa;
+            margin: 0;
+            height: 100vh; /* جعل الصفحة تملأ ارتفاع الشاشة بالكامل */
+            display: flex;         /* استخدام تقنية Flexbox للمحاذاة */
+            justify-content: center; /* توسيط العناصر أفقياً */
+            align-items: center;     /* توسيط العناصر عمودياً */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط حديث ونظيف */
+        }
 
-    <body>
+        /* تصميم المستطيل الأرجواني ذو الحواف الناعمة */
+        .purple-card {
+            /* تدرج لوني أرجواني حديث بدلاً من لون مصمت */
+            background: linear-gradient(135deg, #9c27b0, #673ab7);
+            color: white; /* لون النص أبيض للتباين */
+            padding: 60px 100px; /* مساحة داخلية واسعة حول النص */
+            border-radius: 35px; /* حواف دائرية ناعمة جداً (Soft Edges) */
+            /* ظل خفيف وناعم لإعطاء عمق وتأثير الطفو */
+            box-shadow: 0 20px 40px rgba(103, 58, 183, 0.25);
+            text-align: center;
+            transition: transform 0.3s ease; /* تأثير حركي بسيط عند مرور الماوس */
+        }
+
+        /* تأثير بسيط عند وضع الماوس فوق المستطيل */
+        .purple-card:hover {
+            transform: translateY(-5px); /* يرتفع قليلاً للأعلى */
+        }
+
+        /* تنسيق النص */
+        h1 {
+            margin: 0;
+            font-size: 3.5rem; /* حجم خط كبير وواضح */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="purple-card">
         <h1>Hello Purple World!</h1>
-        <a href="https://purplenode.xyz/">PurpleNode</a>
-        <img src="Purple_logo.jpg" width="300" height="300">
-        <p>This World is Peak</p>
+    </div>
 
-        <ul>
-            <li>Zundamon</li>
-            <li>Miku</li>
-            <li>Teto</li>
-        </ul>
-
-        <table>
-            <tr>
-                <th>Vocal</th>
-                <th>Voice</th>
-                <th>My Love</th>
-            </tr>
-
-            <tr>
-                <td>Zundamon</td>
-                <td>10/10</td>
-                <td>10/10</td>
-            </tr>
-            <tr>
-                <td>Miku</td>
-                <td>8/10</td>
-                <td>9/10</td>
-            </tr>
-            <tr>
-                <td>Teto</td>
-                <td>9/10</td>
-                <td>9/10</td>
-            </tr>
-        </table>
-
-            <h2>Insights Submission Form</h2>
-    <form action="/submit-feedback" method="POST">
-        <fieldset>
-            <legend></legend>
-    
-            <!-- Name Field -->
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-    
-            <!-- Email Field -->
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-    
-            <!-- Comments Field -->
-            <label for="comments">Comments:</label><br>
-            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts about Thomas J. Watson"></textarea><br><br>
-    
-            <!-- Submit Button -->
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form>
-
-    </body>
+</body>
 </html>
